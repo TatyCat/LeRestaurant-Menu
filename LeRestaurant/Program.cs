@@ -44,23 +44,19 @@ namespace LeRestaurant
                         selected.breakfastMenu();
                         break;
                     case 2:
+                        selected.lunchMenu();
                         break;
                     case 3:
-
+                        selected.dinnerMenu();
                         break;
                 }
             }
             else
             {
-                Console.WriteLine("Please enter 1, 2, or 3");
-                Menu menuObj = new Menu();
-                menuObj.menuInput = Console.ReadLine();
-
+                Console.WriteLine("Please try again by entering 1, 2, or 3");
+                Console.WriteLine();
+                menuHomeScreen();
             };
-
-
-            //Console.WriteLine("Selected Menu: " + cleanedInput);
-
         }
     }
 
@@ -78,10 +74,17 @@ namespace LeRestaurant
             //   {"Apples", 3.75}
             //};
         }
+
+        public void lunchMenu()
+        {
+            Console.WriteLine("lunch Menu");
+
+        }
+
+        public void dinnerMenu()
+        {
+            Console.WriteLine("Dinner Menu");
+
+        }
     }
-
-    public class LunchMenu { }
-
-    public class DinnerMenu { }
-
 }
