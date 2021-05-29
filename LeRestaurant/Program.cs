@@ -28,34 +28,56 @@ namespace LeRestaurant
             Console.WriteLine("Enter 3 for Dinner");
 
             menuObj.menuInput = Console.ReadLine();
-            Menu.scrubInput(menuObj.menuInput);
-
+            Menu.selectMenu(menuObj.menuInput);
         }
 
-        public static void scrubInput(string input)
+        public static void selectMenu(string input)
         {
-            Console.WriteLine("Selected Menu: " + input);
+            int cleanedInput = Convert.ToInt32(input);
 
-        }
+            if (cleanedInput == 1 || cleanedInput == 2 || cleanedInput == 3)
+            {
+                AllMenus selected = new AllMenus();
+                switch (cleanedInput)
+                {
+                    case 1:
+                        selected.breakfastMenu();
+                        break;
+                    case 2:
+                        break;
+                    case 3:
 
-        public static void selectMenu(string input)//call menu based on input
-        {
-            //switch (input)
-            //{
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please enter 1, 2, or 3");
+                Menu menuObj = new Menu();
+                menuObj.menuInput = Console.ReadLine();
 
-            //};
+            };
+
+
+            //Console.WriteLine("Selected Menu: " + cleanedInput);
+
         }
     }
 
 
-    public class BreakfastMenu
+    public class AllMenus
     {
-        //Dictionary<string, double> breakfast = new Dictionary<string, double>
-        //{
-        //   {"Apples", 3.75},
-        //   {"Apples", 3.75},
-        //   {"Apples", 3.75}
-        //};
+        public void breakfastMenu()
+        {
+            Console.WriteLine("BreakfastMenu");
+
+            //Dictionary<string, double> breakfast = new Dictionary<string, double>
+            //{
+            //   {"Apples", 3.75},
+            //   {"Apples", 3.75},
+            //   {"Apples", 3.75}
+            //};
+        }
     }
 
     public class LunchMenu { }
