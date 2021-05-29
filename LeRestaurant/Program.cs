@@ -29,12 +29,13 @@ namespace LeRestaurant
 
             menuObj.menuInput = Console.ReadLine();
             Menu.scrubInput(menuObj.menuInput);
-            Console.WriteLine("Selected Menu: " + menuObj.menuInput);
 
         }
 
         public static void scrubInput(string input)
         {
+            Console.WriteLine("Selected Menu: " + input);
+
         }
 
         public static void selectMenu(string input)//call menu based on input
