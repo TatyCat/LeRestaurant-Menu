@@ -1,4 +1,4 @@
 # LeRestaurant-Menu
-Restaurant Menu App using C# and React.js
+Console/Terminal Restaurant Menu app using C#. 
 
-Purpose: Practice use of C#.
+Purpose: Meant as a soft intro back into the practice of C#. Uses classes and methods

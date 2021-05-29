@@ -10,7 +10,6 @@ namespace LeRestaurant
         {
             Console.WriteLine("Bienvenue au restaurant!");
             Menu.menuHomeScreen();
-
         }
     }
 
@@ -66,13 +65,6 @@ namespace LeRestaurant
         public void BreakfastMenu()
         {
             Console.WriteLine("BreakfastMenu");
-
-            //Dictionary<string, double> breakfast = new Dictionary<string, double>
-            //{
-            //   {"Apples", 3.75},
-            //   {"Apples", 3.75},
-            //   {"Apples", 3.75}
-            //};
         }
 
         public void LunchMenu()
