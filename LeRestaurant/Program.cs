@@ -41,13 +41,13 @@ namespace LeRestaurant
                 switch (cleanedInput)
                 {
                     case 1:
-                        selected.breakfastMenu();
+                        selected.BreakfastMenu();
                         break;
                     case 2:
-                        selected.lunchMenu();
+                        selected.LunchMenu();
                         break;
                     case 3:
-                        selected.dinnerMenu();
+                        selected.DinnerMenu();
                         break;
                 }
             }
@@ -63,7 +63,7 @@ namespace LeRestaurant
 
     public class AllMenus
     {
-        public void breakfastMenu()
+        public void BreakfastMenu()
         {
             Console.WriteLine("BreakfastMenu");
 
@@ -75,13 +75,13 @@ namespace LeRestaurant
             //};
         }
 
-        public void lunchMenu()
+        public void LunchMenu()
         {
             Console.WriteLine("lunch Menu");
 
         }
 
-        public void dinnerMenu()
+        public void DinnerMenu()
         {
             Console.WriteLine("Dinner Menu");
 
